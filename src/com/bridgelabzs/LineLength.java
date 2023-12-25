@@ -1,5 +1,5 @@
 package com.bridgelabzs;
-
+import java.util.*;
 public class LineLength {
 
 	public static void main(String[] args) {
@@ -9,11 +9,19 @@ public class LineLength {
 	System.out.println(length);
 
 	}
+	
 	public double lengthOfLine() {
-	int x1 =10 ;
-	int x2 = 20;
-	int y1 = 10;
-	int y2 = 20;
+		Scanner input =new Scanner(System.in);
+		System.out.println("x1= ");
+		
+		
+	int x1 = input.nextInt();
+	System.out.println("x2= ");
+	int x2 = input.nextInt();
+	System.out.println("y1= ");
+	int y1 = input.nextInt(); 
+	System.out.println("y2= ");
+	int y2 = input.nextInt();
 	double length =Math.sqrt(Math.pow(x2-x1, 2)+Math.pow(y2-y1, 2));
 	return length;		
 		
